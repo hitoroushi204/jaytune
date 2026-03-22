@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JayTune</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JayTune</h1>
+    <nav>
+      <a href="#playlist">Playlist</a>
+      <a href="#artists">Artists</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="player-section">
+      <img id="cover" src="images/cover1.jpg" alt="Song Cover">
+      <h2 id="song-title">About You</h2>
+      <p id="artist-name">The 1975</p>
+
+      <audio id="audio-player" controls></audio>
+
+      <div class="controls">
+        <button id="prevBtn">⏮</button>
+        <button id="playBtn">▶</button>
+        <button id="nextBtn">⏭</button>
+      </div>
+
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+    </section>
+
+    <section id="playlist">
+      <h2>Playlist</h2>
+      <ul>
+        <li>About You - The 1975</li>
+        <li>Back to Friends - Sombr</li>
+        <li>Iris - Goo Goo Dolls</li>
+      </ul>
+    </section>
+
+    <section id="artists">
+      <h2>Artists</h2>
+      <div class="artist-grid" id="artist-grid">
+        <!-- Images will be inserted by JS -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
